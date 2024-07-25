@@ -46,7 +46,7 @@ function Main(){
     setError(true)
   }
   return (
-    <div className='lg:grid lg:grid-cols-2 md:w-3/4 md:mx-auto md:my-20 bg-slate-50 lg:rounded-[25px] md:rounded-lg'>
+    <div className='lg:grid lg:grid-cols-2 md:w-3/4 md:mx-auto md:my-20 lg:my-44 lg:w-[70%] bg-slate-50 lg:rounded-[25px] md:rounded-lg'>
       <MortgageCalculator handleSubmit={handleSubmit} onClickClearAll={handleClearAllBtn} amount={amount} setAmount={setAmount} term={term} setTerm={setTerm} interest={interest} setInterest={setInterest} mortgageType={mortgageType} setMortgageType={setMortgageType} error={error}/>
       <Result result={result} term={term}/>
     </div>
